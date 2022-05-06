@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogPage2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="icon" type="image/png" href="Resources/favicon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300">
+        <link rel="stylesheet" type="text/css" href="stylemain.css">
+    <style>
+
+/* 1st Div (one containing logo and navbar) */
+
+        .div1 {
+            width: 99.7%;
+            height: 115.2px;
+            margin-top: 1%;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            border-radius: 15px;
+            background-color: black;
+            z-index: 3;
+            font-family: montserrat;
+        }
+
+    /* Buttons on Navbar */
+
+        .navbarbtn {
+
+            border: none;
+            background: none;
+            color: white;
+            border-radius: 15px;
+            font-size: 16.32px;
+            font-weight: 400;
+            margin-top: 48px;
+            margin-right: 19.2px;
+            cursor: pointer;
+
+        }
+
+        .navbarbtn:hover {
+
+            background-color: #c59137;
+
+        }
+
+/* 2nd Div (one on the left side of the screen) */
+
+        .div2 {
+            width:15%;
+            display: flex;
+            
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+            position: -webkit-sticky;
+            position: sticky;
+            z-index: 2;
+            top: 115.2px;
+            height: 550px;
+            background-color: rgb(255, 255, 255);
+            float:left;
+            border-radius: 15px;
+            margin-top: 9.6px;
+            z-index: .8;
+        }
+
+    /* To stick div 2 to its position relative to div 1 */
+
+        .sticky {
+            position: fixed;
+            top: 115.2px;
+            width: 15%;
+            
+        }
+
+    /* Write Button */
+
+        .write {
+            background-color: #c59137;
+            height: 48px;
+            width: 115.2px;
+            margin-top: 30%;        
+            font-size: 19.2px;
+            font-weight: bold;
+            border-radius: 15px;
+            color: white;
+            cursor: pointer;
+            
+        }
+
+    /* Blog Services Buttons */
+
+        .blogbtndiv {
+           margin: 15% 5% 5% 5%;
+        }
+
+        .blogbtn {
+           
+            text-align: center;
+            color: rgb(0, 0, 0);
+            padding: 0;
+            border: none;
+            background: none;
+            font-weight: bold;
+            border-radius: 25%;
+            font-size: 21.12px;
+            font-family: 'Trebuchet MS', sans-serif;
+            
+            cursor: pointer;
+        }
+
+        .blogbtn:hover {
+            background-color: rgb(194, 194, 194);
+        }
+
+        .fa fa-frown-o:hover {
+            content: i class="fa fa-smile-o";
+        }
+
+/* 3rd Div (one at the right side of the screen) */
+        
+        .div3 {
+            top: 1.2;
+            margin-left: 115.2px;
+            margin-bottom: 1.92px;
+            width: 20%;
+            margin-right: 4.8px;
+            margin-top: 9.6px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 15px;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 115.2px;
+            float:right; 
+            height: auto;   
+            font-family: Open sans;
+        }
+
+    /* Medals Images */
+
+        .imgwinner {
+            height: 57.6px;
+            width: 48px;
+            float: left;
+            margin-left: 22px;
+            cursor: pointer;
+        }
+
+    /* Types of Articles */
+
+        .interestbtn {
+            border-radius: 50px;
+            text-align: center;
+            min-width: 96px;
+            border: none;
+            background-color: rgb(255, 255, 255);
+            height: 48px;
+            font-size: 19.2px;
+            margin-left: 38.4px;
+            margin-top: .1in;
+            border: 5px solid blueviolet;
+            cursor: pointer;
+            box-shadow: 0px 0px 15px rgb(138, 43, 226);
+        }
+
+        .interestbtn:hover{
+            background-color: rgb(39, 36, 36);
+            color: floralwhite;
+        }
+
+/* 4th Div (at the centre below 1st div) */
+
+        .div4 {
+            width: 60%;
+            margin-left: 17%;
+            background-color: rgb(255, 255, 255);
+            border-radius: 15px;
+            margin-top: 10%;
+            max-height: 300px;
+        }
+
+    /* Text Area */
+
+        .textarea {
+            width: auto;
+            height: 76.8px;
+            text-align: left;
+            font-size: 19.2px;
+            border-radius: 15px;
+            margin-bottom: 21.12px;
+            cursor: pointer;
+            max-height: 76.8px;
+            margin-left: .2in;
+        }
+
+/* 5th Div (one showing trends) */
+
+        .div5 {
+            margin: 19.2px;
+            width: 60%;
+            margin-left: 17%;
+            border-radius: 15px;
+            background-color: rgb(255, 255, 255);
+        }
+
+    /* Best etc Buttons */
+
+        .btntyp {
+            margin: 9.6px;
+            padding: 0;
+            border: none;
+            background: none;
+            border-radius: 15px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-left: 38.4px;
+            cursor: pointer;
+        }
+
+        .btntyp:hover {
+            background-color: rgb(194, 194, 194);
+        }
+
+/* 6th Div (articles) */
+
+        .div6 {
+            border-radius: 15px;
+            width: 60%;
+            margin-left: 17%;
+            height: auto;
+            background-color: rgb(39, 36, 36);
+            margin-bottom: 19.2px;
+        }
+
+    /* Writer's Image */
+
+        .blogimgs {
+            height: 192px;
+            width: 288px;
+            border-radius: 15px;
+            float: left;
+            top: 0%;
+            margin: 9.6px;
+            box-shadow: 0px 0px 15px rgb(255, 255, 255);
+            margin-right: 19.2px;
+        }
+
+    /* Heading of Content*/
+
+        .blogheadings {
+            font-size: 21.12px;
+            color: rgb(255, 255, 255);
+            margin-right: 9.6px;
+            font-family: montserrat;
+        }
+
+    /* Paragraphs */
+
+        .blogparas {
+            margin-left: 19.2px;
+            font-size: 1.125rem;
+            color: rgb(255, 255, 255);
+            margin-right: 12px;
+            text-align: justify;
+            font-family: Open sans;
+        }
+
+    /* Like Button */
+
+        button.like{
+            width: 38.4px;
+            height: 38.4px;
+            margin: 0 auto;
+            border-radius: 50%;
+            color: rgb(9, 248, 224);
+            background-color:rgba(11, 175, 159, 0.3);
+            border-width: 1px;
+            font-size: 15px;
+            box-shadow: 5px 0px 15px rgb(0, 253, 190);
+            margin: 9.6px;
+            margin-left: 19.2px;
+            cursor: pointer;
+        }
+
+    /* Dislike Button */
+
+        button.dislike{
+            width: 38.4px;
+            height: 38.4px;
+            margin: 0 auto;
+            border-radius: 50%;
+            color: rgb(255, 0, 0);
+            background-color: rgba(255,138,128 ,0.3);
+            border-width: 1px;
+            font-size: 15px;
+            box-shadow: 5px 0px 15px rgb(255, 14, 14);
+            margin: 9.6px;
+            cursor: pointer;
+        }
+
+    /* To Read More About Article */
+
+        .readmore {
+            width: 288px;
+            height: 38.4px;
+            color: rgb(255, 255, 255);
+            border: none;
+            background: none;
+            float: right;
+            font-size: 14.4px;
+            margin-right: 28.8px;
+            cursor: pointer;
+        }
+
+    </style>
+
+</head>
+
+<!--Body-->
+
+<body style="background-color: #fff;">
+
+
+<!--Division 1-->
+
+ <!--    
+    <div class="div1">
+
+        <img src="Resources/logo.jpg" style="float: left; height: 96px; margin: 9.6px; margin-left: 48px; width: 163.2px;">
+
+        <div style="float: right;">
+            
+            <button onclick="document.location='Index.html'" class="navbarbtn">HOME</button>
+            <button onclick="document.location='About.html'" class="navbarbtn">ABOUT</button>
+            <button onclick="document.location='#'" class="navbarbtn">BLOG</button>
+            <button onclick="document.location='Services.html'" class="navbarbtn">SERVICES</button>
+            <button onclick="document.location='#Contact'" class="navbarbtn" style="margin-right: 144px;">CONNECT US</button>
+
+        </div>
+        
+        
+    </div>
+ -->
+    <nav id="navArea" style="background-color: black;">
+    <div class="logo">
+      <a href="Index.html">
+        <img src="Resources/logo3.png" alt="FitFreaks">
+      </a>
+    </div>
+    <ul id="navBar">
+      <li><a href="Index.html">HOME</a></li>
+      <li><a href="About.html">ABOUT</a></li>
+      <li><a href="#">BLOG</a></li>
+      <li><a href="Services.html">SERVICES</a></li>
+      <li><a href="#Contact">CONNECT US</a></li>
+    </ul>
+    <div id="myNavBar" class="navbarmenu">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="navbar-menu-overlay-content">
+        <a href="#">Home</a>
+        <a href="About.html">About</a>
+        <a href="Services.html">Services</a>
+        <a href="#Contact">Contact</a>
+      </div>
+    </div>
+    <span style="font-size:40px;cursor:pointer;margin-top: 10px;" class="menubar" onclick="openNav()">
+        <i class="fa fa-bars" style="color: white;"></i>
+    </span>
+    </nav>
+<!--Division 2-->
+
+
+    <div class="div2" id="div2">
+
+         <div><button class="write"><i class="fa fa-pencil-square-o" style="font-size:24px"></i> Write</button></div>
+
+         <div class="blogbtndiv">
+            <button class="blogbtn"><i class="fa fa-user" style='font-size:24px'></i> My Profile</button><br><br>
+            <button class="blogbtn"><i class="fa fa-bars" style="font-size:24px"></i> My Feed</button><br><br>
+            <button class="blogbtn"><i class="fa fa-compass" style="font-size:24px"></i> Explore</button><br><br>
+            <button class="blogbtn"><i class="fa fa-bookmark" style="font-size:24px"></i> Bookmark</button><br><br>
+            <button class="blogbtn"><i class="fa fa-search" style="font-size:24px"></i> Search</button><br><br>
+            <button class="blogbtn"><i class="fa fa-plus" style="font-size:24px"></i>  More</button><br><br>
+         </div>
+
+
+    </div>
+
+
+<!--Division 3-->
+
+
+    <div class="div3">
+
+        <div>
+
+        <h3 style="font-size: .25in; text-align: center;">Previous Week Winners</h3>
+        <p style="text-align: center;">(Decided by the maximum number of votes)</p>
+        <img src="Resources/gold.jpg" class="imgwinner"> <br><h3 style="margin-top: .0096px; margin-left: 80px; font-size: 21.12px;">Dumbeldore</h3>
+        <img src="Resources/silver.jpg" class="imgwinner"> <br><h3  style="margin-top: .0096px; margin-left: 80px; font-size: 21.12px;">Grindalwald</h3>
+        <img src="Resources/bronze.jpg" class="imgwinner"> <br><h3  style="margin-top: .0096px; margin-left: 80px; font-size: 21.12px;">Voldemort</h3>
+
+
+        </div>
+
+        <div style=" margin-top: 48px;">
+
+            <h3 style="font-size: 24px; text-align: center;">Topics Of Interest</h3>
+            <input type="button" class="interestbtn" value="Gyming"><input type="button" class="interestbtn" value="Dieting"> <br>
+            <input type="button" class="interestbtn" value="Wt-Loss"><input type="button" class="interestbtn" value="Wt-Gain"> <br>
+            <input type="button" class="interestbtn" value="BMI"><input type="button" class="interestbtn" value="More..">
+
+        </div>
+
+        <div style=" margin-top: 48px;">
+
+            <h3 style="font-size: 24px; text-align: center;">Story Of The Day</h3>
+            <img src="Resources/weight loss.jpg" style="height: 144px; width: 288px; margin: 9.6px; border-radius: 15px;">
+            <p style="max-width: 288px; font-size: 17.28px; text-align: justify; margin: 9.6px; ">I became a new person after losing a whopping 32 kilos and learnt to love myself ! <a href="https://www.w3schools.com/" style="float: right;cursor: pointer;">Read More...</a></p>
+            
+
+        </div>
+
+    </div>
+
+
+<!--Division 4-->
+
+
+<div class="div4">
+    <i class="fa fa-user-circle" style="font-size:36px; margin-top: 28.8px; margin-left: 28.8px; float: left; margin-right: 19.2px;cursor: pointer;"></i>&nbsp &nbsp &nbsp <h3 style="margin-top: 19.2px;font-family: montserrat; ">User Name</h3>
+    <div  class="fa fa-pencil" style="font-size:30px; margin-left: 3%"></div>
+    <input type="textarea" class="textarea" style="font-size:30px; width: 80%;" placeholder=" Write an article... ">
+</div>
+
+
+<!--Division 5-->
+
+
+<div class="div5" style="background-color: rgb(255, 255, 255);">
+    <button class="btntyp" id="btntyp1" style="background-color: rgb(199, 199, 199);"><i class="fa fa-arrow-circle-up" style="font-size:24px"></i> BEST</button>&nbsp
+    <button class="btntyp"><i class="fa fa-clock-o" style="font-size:24px"></i> RECENT</button>
+    <button class="btntyp"><i class="fa fa-clone" style="font-size:24px"></i></i> CATEGORIES</button>
+</div>
+
+
+<!--Division 6-->
+
+<!--Blog 1-->
+
+<div class="div6">
+    <table>
+        <tr>
+            <td><img src="Resources/userimg1.png" style="height: 57.6px; width: 57.6px; margin-left: 20px; padding: 0%;border: 3px solid rgba(60, 255, 0, 0.3);border-radius: 50%;cursor: pointer; margin-top: 9.6px;"></td>
+            <td><h3 style="margin-left: 9.6px; color: white; font-family: montserrat;">Ramesh Bhattacharya</h3></td>
+        </tr>
+        
+    </table>
+
+    <img src="Resources/blog1.jpg" class="blogimgs">
+
+    <h3 class="blogheadings" >Eating Breakfast Can Help You Burn More Carbs When You Work Out:</h3>
+
+    <p class="blogparas">Eating breakfast before a workout can help your body burn carbohydrates during the sweat fest, and more quickly digest food after it, according to a recent study.
+
+        “This is the first study to show that breakfast speeds up the clearance of glucose out of the bloodstream and into muscle after we eat lunch, even when we perform exercise in-between breakfast and lunch,” Javier Gonzalez, PhD, co-author, and senior lecturer at the Department for Health at the University of Bath in the U.K, told Healthline. Researchers led by a team at the University of Bath looked at 12 male adults who ate porridge with milk two hours before cycling for an hour, and compared it to those who fasted overnight before the ride. They found that those who ate boosted the rate at which they burned carbs during the workout. Those who ate also increased the rate that their bodies digested and metabolized food after a workout as well.
+    </p>
+
+    <button class="like">
+        <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+    </button>
+    
+    <button class="dislike">
+        <i class="fa fa-thumbs-o-down" aria-hidden="true"></i>
+    </button>
+    
+    <button class="readmore">To continue reading this article,  <b>Click Here</b></button>
+</div>
+
+<!--Blog 2-->
+
+    <div class="div6">
+        <table>
+            <tr>
+                <td><img src="Resources/userimg2.png" style="height: 57.6px; width: 57.6px; margin-left: 20px; padding: 0%;border: 3px solid rgba(60, 255, 0, 0.3);border-radius: 50%;cursor: pointer;margin-top: 9.6px;"></td>
+                <td><h3 style="margin-left: 9.6px; color: white; font-family: montserrat;">Hande Ercel</h3></td>
+            </tr>
+            
+        </table>
+
+        <img src="Resources/blog2.jpg" class="blogimgs">
+
+        <h3 class="blogheadings">How to Make Exercise Fun:</h3>
+
+        <p class="blogparas">
+            Exercise is one of the pillars of longevity. The benefits of exercise are many: heart health, weight management, better sleep, improved mood, more energy and many more. The biggest benefit? Reducing your risk of chronic illnesses. Through exercise, you’ll stay healthy longer, age well, and feel great.Getting started on a routine exercise habit is the hardest part. Use these ideas to put some more fun into your exercise routine.Find someone to be your exercise buddy. Don’t choose just anyone: Pick someone who is full of energy, fun, and who you look forward to spending time with. That way, you’ll want to exercise just to be with your friend.Group classes are a way to meet new people, have an instructor to keep your form and effort good, and be motivated to go each time. Shop around for your class: Find an instructor who has both knowledge and enthusiasm.You can gauge the social tone an instructor creates by watching if anyone talks to them before or after the class and if the other participants talk to each other.
+        </p>
+
+        <button class="like">
+            <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+        </button>
+        
+        <button class="dislike">
+            <i class="fa fa-thumbs-o-down" aria-hidden="true"></i>
+        </button>
+        
+        <button class="readmore">To continue reading this article,  <b>Click Here</b></button>
+    </div>
+
+<!--Blog 3-->
+
+    <div class="div6">
+        <table>
+            <tr>
+                <td><img src="Resources/userimg3.png" style="height: 57.6px; width: 57.6px; margin-left: 20px; padding: 0%;border: 3px solid rgba(60, 255, 0, 0.3);border-radius: 50%;cursor: pointer;margin-top: 9.6px;"></td>
+                <td><h3 style="margin-left: 9.6px; color: white; font-family: montserrat;">Prakash Banarjee</h3></td>
+            </tr>
+            
+        </table>
+
+        <img src="Resources/blog3.jpg" class="blogimgs">
+
+        <h3 class="blogheadings">The Mental Health Benefits of Exercise:</h3>
+
+        <p class="blogparas">Exercise is not just about aerobic capacity and muscle size. Sure, exercise can improve your physical health and your physique, trim your waistline, improve your sex life, and even add years to your life. But that’s not what motivates most people to stay active.
+
+            People who exercise regularly tend to do so because it gives them an enormous sense of well-being. They feel more energetic throughout the day, sleep better at night, have sharper memories, and feel more relaxed and positive about themselves and their lives. And it’s also a powerful medicine for many common mental health challenges. Regular exercise can have a profoundly positive impact on depression, anxiety, and ADHD. It also relieves stress, improves memory, helps you sleep better, and boosts your overall mood. And you don’t have to be a fitness fanatic to reap the benefits. Research indicates that modest amounts of exercise can make a real difference. No matter your age or fitness level, you can learn to use exercise as a powerful tool to deal with mental health problems.       
+        </p>
+
+        <button class="like">
+            <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+        </button>
+        
+        <button class="dislike">
+            <i class="fa fa-thumbs-o-down" aria-hidden="true"></i>
+        </button>
+        
+        <button class="readmore">To continue reading this article,  <b>Click Here</b></button>
+    </div>
+
+<!--Blog 4-->
+
+    <div class="div6">
+        <table>
+            <tr>
+                <td><img src="Resources/userimg4.png" style="height: 57.6px; width: 57.6px; margin-left: 20px; padding: 0%;border: 3px solid rgba(60, 255, 0, 0.3);border-radius: 50%; cursor: pointer;margin-top: 9.6px;"></td>
+                <td><h3 style="margin-left: 9.6px; color: white; font-family: montserrat;">Harry Potter</h3></td>
+            </tr>
+            
+        </table>
+
+        <img src="Resources/blog4.jpg" class="blogimgs">
+
+        <h3 class="blogheadings">The Benefits of Exercise for the Clinically Depressed:</h3>
+
+        <p class="blogparas">Millions of Americans suffer from clinical depression each year. Most depressed patients first seek treatment from their primary care providers. Generally, depressed patients treated in primary care settings receive pharmacologic therapy alone. There is evidence to suggest that the addition of cognitive-behavioral therapies, specifically exercise, can improve treatment outcomes for many patients. Exercise is a behavioral intervention that has shown great promise in alleviating symptoms of depression. The current review discusses the growing body of research examining the exercise-depression relationship that supports the efficacy of exercise as an adjunct treatment. Databases searched were Medline, PsycLit, PubMed, and SportsDiscus from the years 1996 through 2003. Terms used in the search were clinical depression, depression, exercise, and physical activity. Further, because primary care physicians deliver important mental health services to the majority of depressed patients.
+        </p>
+
+        <button class="like">
+            <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+        </button>
+        
+        <button class="dislike">
+            <i class="fa fa-thumbs-o-down" aria-hidden="true"></i>
+        </button>
+        
+        <button class="readmore">To continue reading this article,  <b>Click Here</b></button>
+    </div>
+
+    <script>
+
+        window.onscroll = function() {myFunction()};
+
+            var header = document.getElementById("div2");
+            var sticky = header.offsetTop;
+
+            function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+
+    </script>
+<script src="scriptmain.js"></script>
+</body>
+</html>

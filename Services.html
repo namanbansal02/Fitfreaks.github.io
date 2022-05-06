@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Services : FitFreaks</title>
+	<style type="text/css">	
+        /*START*/
+        .plan-sec{
+        	background-color: #fff;
+        	font-family: open Sans;
+        	height: auto;
+        	font-size: 1em;
+
+        }
+        .plan-div{
+        	height: auto;
+        	width: 100%;
+        	display: flex;
+        	justify-content: space-evenly;
+        	align-items: center;
+        	
+        }
+        .plan-div table{
+        	border: 2px solid black;
+        	font-size: 1em;
+  			text-align: center;
+        	width:28%;
+        	margin-top: 10%;
+        	margin-bottom: 10%;
+        }
+        .plan-div table tr th{
+        	font-size: 2.5em;
+        	background-color: black;
+        	color: #c59137;
+        	border-bottom: 1px solid grey;
+
+        }
+        .plan-div table tr td{
+        	padding: 3%;
+
+        	border-bottom: 1px solid grey;
+        }
+        .plan-div table tr:nth-child(2) {
+        	font-size: 2em;
+        }
+        .looking-div{
+        	text-align: center;
+        	margin: 0% auto 8% auto;
+        }
+        .looking-div span{
+        	font-size: 2em;
+        	
+        }
+        .call-sec{
+        	height: 500px;
+        	background-color: black;
+        	color: #c59137;
+        	display: flex;
+        	align-items: center;
+        	justify-content: center;
+
+
+        }
+        .call-sec div:nth-child(1) img{
+        	height: 275px;
+        	width: 275px;
+        	margin-right: 5%;
+
+        }
+        .call-sec div:nth-child(2) {
+        	text-align: left;
+        	margin-left: 10%;
+
+        }
+        .call-sec div:nth-child(2) span{
+        	font-size: 2.5em;
+        	font-family: montserrat;
+        	font-weight: 350;
+	    }
+	    .call-sec div:nth-child(2) p{
+        	font-size: 1em;
+        	font-family: Open Sans;
+        	
+        }
+
+        .FAQs{
+        	display: flex;
+        	flex-direction: column;
+        	align-items: center;
+        	background-color: #fff;
+        	padding-top: 10%;
+        	padding-bottom: 10%;
+        	font-family: Montserrat;
+        }
+        .FAQs h1{
+        	font-size: 37px;
+        	font-weight: 250;
+        }
+        .Questions {
+			  background-color: #eee;
+			  color: #444;
+			  cursor: pointer;
+			  padding: 18px;
+			  width: 60%;
+			  border: none;
+			  text-align: left;
+			  outline: none;
+			  font-size: 15px;
+			  transition: 0.4s;
+			  font-family: Open Sans;
+			  font-weight: 600;
+		}
+
+		.active, .Questions:hover {
+		  background-color: #ccc;
+		}
+
+		.Questions:after {
+		    content: '\25BC';
+		    color: #777;
+			font-weight: bold;
+	        float: right;
+		    margin-left: 5px;
+		}
+		.active:after {
+		    content: "\25B2";
+		}
+		.Ans {
+			padding: 0 18px;
+			background-color: white;
+			width: 60%;
+			max-height: 0;
+		    overflow: hidden;
+		    transition: max-height 0.2s ease-out;
+		    font-family: Open sans;
+		}
+
+	</style>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu|Lora">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|Poppins">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+	<link rel="icon" type="image/png" href="Resources/favicon.png">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300">
+	<link rel="stylesheet" type="text/css" href="stylemain.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<section class="parent-sec">
+	<nav id="navArea">
+	<div class="logo">
+	  <a href="Index.html">
+	    <img src="Resources/logo3.png" alt="FitFreaks">
+	  </a>
+	</div>
+	<ul id="navBar">
+	  <li><a href="Index.html" >HOME</a></li>
+	  <li><a href="About.html">ABOUT</a></li>
+	  <li><a href="Blog.html">BLOG</a></li>
+	  <li><a href="#">SERVICES</a></li>
+	  <li><a href="#Contact">CONNECT US</a></li>
+	</ul>
+	<div id="myNavBar" class="navbarmenu">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  <div class="navbar-menu-overlay-content">
+	  	<a href="Index.html">Home</a>
+	    <a href="About.html">About</a>
+	    <a href="">Services</a>
+	    <a href="#Contact">Contact</a>
+	  </div>
+	</div>
+	<span style="font-size:40px;cursor:pointer;margin-top: 10px;" class="menubar" onclick="openNav()"><i class="fa fa-bars" style="color: white;"></i></span>
+	</nav>
+	 <div class="head-quote-div">
+	 	
+	 		<h2 class="heading">FitFreaks</h2>
+	 		<p class="quote"><b>Fitness is </b> not about <b>being better</b> than <b>someone else.</b> <br> It's about being better than <b>you used to be.</b></p>
+	 	    <input type="button" value="START NOW" class="btn-type-1 buttons" onclick="window.location.href='#planssec';">
+	 </div>
+</section>
+<!-- END -->
+<!-- START -->
+<section class="plan-sec" id="planssec">
+		<div class="plan-div">
+		<table>
+			<tr>
+				<th>BRONZE</th>
+			</tr>
+			<tr>
+				<td>&#8377; 599</td>
+			</tr>
+			<tr>
+				<td>Ideal for anyone looking to enhance their fitness programmes within a gym or fitness center setting.</td>
+			</tr>
+			<tr>
+				<td>FREE Initial Consultation</td>
+				</tr>
+			<tr>
+				<td><br>-</td>
+			</tr>
+			<tr>
+				<td>Smartphone App Access</td>
+			</tr>
+			<tr>
+				<td>Exercise Video Library</td>
+			</tr>
+			<tr>
+				<td>Tailored Workouts & Exercise Programmes</td>
+			</tr>
+			<tr>
+				<td>Weekly Check-ins</td>
+			</tr>
+			<tr>
+				<td>Macronutrient Guidance</td>
+			</tr>
+			<tr>
+				<td><br>-</td>
+			</tr>
+			<tr>
+				<td><br>-</td>
+			</tr>
+			<tr>
+				<td><br>-</td>
+			</tr>
+			<tr>
+				<td><input type="button" name="" value="GET NOW" class="btn-type-2 buttons" id="getitnow1"></td>
+			</tr>
+		</table>
+		<table>
+			<tr>
+				<th>SILVER</th>
+			</tr>
+			<tr>
+				<td>&#8377; 899</td>
+			</tr>
+			<tr>
+				<td>Fantastic for anyone looking to enhance their fitness either in a gym or home setting with tailored advice and guidance.​</td>
+			</tr>
+			<tr>
+				<td>FREE Initial Consultation</td>
+			</tr>
+			<tr>
+				<td>Includes real-time home training with trainer via video (upto 3 x 45 min sessions per week)</td>
+			</tr>
+			<tr>
+				<td>Smartphone App Access</td>
+			</tr>
+			<tr>
+				<td>Exercise Video Library</td>
+			</tr>
+			<tr>
+				<td>Tailored Workouts & Exercise Programmes </td>
+			</tr>
+			<tr>
+				<td>Fitness Goal Setting and Advice</td>
+			</tr>
+			<tr>
+				<td>Twice Weekly Phone or Video Check-ins</td>
+			</tr>
+			<tr>
+				<td>Nutritional Guidance and Advice For Meal Preparation</td>
+			</tr>
+			<tr>
+				<td>-</td>
+			</tr>
+			<tr>
+				<td><br>-</td>
+			</tr>
+			<tr>
+				<td><input type="button" name="" value="GET NOW" class="btn-type-2 buttons" id="getitnow2"></td>
+			</tr>
+		</table>
+		<table>
+			<tr>
+				<th>GOLD</th>
+			</tr>
+			<tr>
+				<td>&#8377; 1299</td>
+			</tr>
+			<tr>
+				<td>Really discover your full potential with a complete step-by-step guide helping take your fitness to the next level.</td>
+			</tr>
+			<tr>
+				<td>FREE Initial Consultation </td>
+			</tr>
+			<tr>
+				<td>Includes real-time home training with trainer via video (upto 5 x 45 min sessions per week)</td>
+			</tr>
+			<tr>
+				<td>Smartphone App Access</td>
+			</tr>
+			<tr>
+				<td>Exercise Video Library</td>
+			</tr>
+			<tr>
+				<td>Tailored Workouts & Exercise Programmes </td>
+			</tr>
+			<tr>
+				<td>Fitness Goal Setting and Advice</td>
+			</tr>
+			<tr>
+				<td>24-7 Support via Phone and Video</td>
+			</tr>
+			<tr>
+				<td>Roadmap to Achieve Fitness Journey</td>
+			</tr>
+			<tr>
+				<td>Fully Supported Nutrition Guidance Including Regular Reviews</td>
+			</tr>
+			<tr>
+				<td>FREE Macronutrient Guide E-Booklet Including Meal Examples</td>
+			</tr>
+			<tr>
+				<td><input type="button" name="" value="GET NOW" class="btn-type-2 buttons" id="getitnow3"></td>
+			</tr>
+		</table>
+		</div>
+			<!-- The Modal -->
+				<div id="myModal1" class="modal">
+
+				  <!-- Modal content -->
+				  <div class="modal-content">
+				    <div class="modal-header">
+				      <span class="closeBTN closeBTN1" >&times;</span>
+				      <h2>REGISTER</h2>
+				    </div>
+				    <div class="modal-body">
+				    	<h1>REGISTRATION FORM</h1>
+				    	<h1>COMING SOON !!! UNDER CONSTRUCTION</h1>
+				    </div>
+				    <div class="modal-footer">
+				      <h3>FitFreaks Registration</h3>
+				    </div>
+				  </div>
+				</div>
+		<div class="looking-div">
+			<span>Can't find what you're looking for?</span>
+			<br>
+			<br>
+			<input type="button" name="" value="GET IN TOUCH" onclick="window.location.href='#Contact';" class="btn-type-2 buttons">
+		</div>
+	</section>
+	<section class="call-sec">
+		<div><img src="Resources/protien.png"></div>
+		<div>
+			<span>Claim Your Free Strategy Call !!</span>
+			<p>Experience what we can do for you first hand. Get a free strategy call via phone or video chat,<br> learn how to maximise your workouts and get advice specific to you and your fitness goals.<br> If you choose to work with us, that's great. If not, that's cool too. </p>
+			<input type="button" value="Claim Offer" class="btn-type-1 buttons">
+		</div>
+	</section>
+	<section class="FAQs">
+		<h1> Frequently Asked Questions </h1>
+		<button class="Questions">Q. DOES IT REALLY HELPS US TO ACHIEVE A BETTER LIFESTYLE? </button>
+		<div class="Ans">
+		  <p>Yes, it definitely helps you to achieve a better lifestyle by keeping your health in check. Also, it focuses on your mental health and energy levels besides achieving physical goals.Yes, after a certain period of time our body gets used to the exercises we perform so we need to change it regularly to see results</p>
+		</div>
+
+		<button class="Questions">Q. DO I NEED TO VARY MY WORKOUTS TO SEE RESULTS?? </button>
+		<div class="Ans">
+		  <p>Yes, after a certain period of time our body gets used to the exercises we perform so we need to change it regularly to see results.Yes, it definitely helps you to achieve a better lifestyle by keeping your health in check. Also, it focuses on your mental health and energy levels besides achieving physical goals</p>
+		</div>
+
+		<button class="Questions"> Q. WHICH TIME OF THE DAY IS BETTER FOR WORKOUT? </button>
+		<div class="Ans">
+		  <p>Anytime of the day is perfect for workout depending upon your schedule and almost 2 hours before or after the meal.For vigorous exercise, doing around 10 minutes a day should suffice. Of course, the more time you can dedicate to working out, the better.</p>
+		</div>
+		<button class="Questions"> Q. I AM REALLY HAVING A BUSY SCHEDULE SO HOW MUCH TIME I HAVE TO GIVE? </button>
+		<div class="Ans">
+		  <p>For vigorous exercise, doing around 10 minutes a day should suffice. Of course, the more time you can dedicate to working out, the better.Anytime of the day is perfect for workout depending upon your schedule and almost 2 hours before or after the meal.</p>
+		</div>
+	</section>
+<footer id="Contact">
+	<section class="footer-sec-1">
+	<div class="foot-div-1">
+		<img src="Resources/logo3.png">
+		<ul class="social-icon disp">
+				<li class="li-tag">
+					<a href="#" class="fa fa-facebook  " ></a>
+				</li>
+				<li>
+					<a href="#" class="fa fa-twitter  " ></a>
+				</li>
+				<li>
+					<a href="#" class="fa fa-instagram  " ></a>
+				</li>
+				<li>
+					<a href="#" class="fa fa-linkedin  " ></a>
+				</li>
+				<li>
+					<a href="#" class="fa fa-youtube  " ></a>
+				</li>
+		</ul>
+	</div>
+	<div class="foot-div-2">
+		<table >
+			<tr>
+				<td><a href="#" class="fa fa-map-marker  " id="icon-tag"></a></td>
+				<td>37-D, Revolution Street <br> Chandigarh, India </td>
+			</tr>
+			<tr>
+				<td><a href="#" class="fa fa-phone  " id="icon-tag"></a></td>
+				<td> +91 999****999</td>
+			</tr>
+			<tr>
+				<td><a href="#" class="fa fa-envelope  " id="icon-tag"></a></td>
+				<td><a href="mailto:info.fitfreaks@gmail.com" class="icon-tag">info.fitfreaks@gmail.com </a></td>
+			</tr>
+		</table>
+	</div>
+	<div class="foot-div-3">
+		<ul class="quick-links">
+			<li><a href="Index.html">HOME</a></li>
+			<li><a href="About.html">ABOUT</a></li>
+			<li><a href="Blog.html">BLOG</a></li>
+			<li><a href="">SERVICES</a></li>			
+			<li><a id="locateus">LOCATE US</a></li>
+		</ul>
+	</div>
+	<!-- The Modal -->
+	<div id="myModal0" class="modal">
+
+	  <!-- Modal content -->
+	  <div class="modal-content">
+	    <div class="modal-header">
+	      <span class="closeBTN">&times;</span>
+	      <h2>LOCATE</h2>
+	    </div>
+	    <div class="modal-body">
+	    	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d109741.02912921035!2d76.6934885768626!3d30.735062644281005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fed0be66ec96b%3A0xa5ff67f9527319fe!2sChandigarh!5e0!3m2!1sen!2sin!4v1621151963647!5m2!1sen!2sin" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+	    </div>
+	    <div class="modal-footer">
+	      <p>Reach Us Now</p>
+	    </div>
+	  </div>
+	</div>
+	</section>
+	<section class="footer-sec-2">
+		<div><hr style="width: 90%; color: #c2a43b;"></div>
+		<div class="footer-sec-div-2">
+		<span>	<span class="fa fa-copyright ico-copy"></span> COPYRIGHT 2021, ALL RIGHT RESERVED</span>
+		<span> FITFREAKS </span>
+		<span> Designed & Developed By NDDM</span>
+		</div>
+		<div><hr style="width: 90%; color: #c2a43b;"></div>
+	</section>
+
+</footer>
+	<button onclick="topFunction()" id="topBtn" title="Go to top" class="fa fa-chevron-circle-up"></button>
+
+<script src="scriptmain.js"></script>
+</body>
+</html>
